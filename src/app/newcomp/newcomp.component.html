@@ -1,0 +1,9 @@
+<body bgcolor="#E6E6FA" >
+        <h1 [ngClass]="{'text-success':true}">{{title}}</h1>
+
+<div class="form-control" >
+        <input appNewcomp [values]="values"  [(ngModel)]="query"  #ctrl="ngModel" (everySecond)="everySecond($event)">
+        <div class="modern" *ngFor="let value of searchedArray,let i=index "  (click)="query=value.name;searchedArray=[]" style="cursor: pointer;">{{value.name}}</div>
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</body>
